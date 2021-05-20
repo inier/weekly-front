@@ -29,11 +29,7 @@ export default class Home extends Component {
         <h2 className="hidden-title">Weekly List</h2>
         <ol className="weekly__list" reversed>
           {reverseList.map(card => (
-            <Card
-              data={card}
-              key={card.id}
-              staticContext={this.props.staticContext}
-            />
+            <Card data={card} key={card.id} staticContext={this.props.staticContext} />
           ))}
         </ol>
       </div>

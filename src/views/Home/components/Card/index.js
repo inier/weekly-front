@@ -8,11 +8,7 @@ export default class Card extends Component {
     } = this.props;
     return (
       <li className="weekly__item">
-        <Link
-          to={`detail/${count}`}
-          className="weekly__item__url"
-          target="_blank"
-        >
+        <Link to={`detail/${count}`} className="weekly__item__url" target="_blank">
           <img
             src={`/static/images/${count}.png`}
             alt={`第${count}期封面图`}
